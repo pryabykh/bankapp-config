@@ -3,10 +3,12 @@ server:
 spring:
   cloud:
     gateway:
-      routes:
-        - id: accounts
-          uri: http://localhost:8081
-          predicates:
-            - Path=/accounts/**
-      default-filters:
-        - StripPrefix=1
+      server:
+        webflux:
+          routes:
+            - id: accounts
+              uri: http://localhost:8081
+              predicates:
+                - Path=/accounts/**
+          default-filters:
+            - StripPrefix=1
