@@ -1,8 +1,8 @@
 server:
   port: 8080
 feign:
-  accounts: http://localhost:8081
-  exchange: http://localhost:8082
-  cash: http://localhost:8084
-  transfer: http://localhost:8085
-  notifications: http://localhost:8087
+  accounts: http://localhost:8089/accounts
+  exchange: http://localhost:8089/exchange
+  cash: http://localhost:8089/cash
+  transfer: http://localhost:8089/transfer
+  notifications: http://localhost:8089/notifications

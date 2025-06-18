@@ -33,5 +33,5 @@ spring:
     name: accounts
 
 feign:
-  exchange: http://localhost:8082
-  notifications: http://localhost:8087
+  exchange: http://localhost:8089/exchange
+  notifications: http://localhost:8089/notifications

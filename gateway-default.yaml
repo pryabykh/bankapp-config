@@ -10,5 +10,29 @@ spring:
               uri: http://localhost:8081
               predicates:
                 - Path=/accounts/**
+            - id: blocker
+              uri: http://localhost:8083
+              predicates:
+                - Path=/blocker/**
+            - id: cash
+              uri: http://localhost:8084
+              predicates:
+                - Path=/cash/**
+            - id: exchange
+              uri: http://localhost:8082
+              predicates:
+                - Path=/exchange/**
+            - id: exchange-generator
+              uri: http://localhost:8086
+              predicates:
+                - Path=/exchange-generator/**
+            - id: notifications
+              uri: http://localhost:8087
+              predicates:
+                - Path=/notifications/**
+            - id: transfer
+              uri: http://localhost:8085
+              predicates:
+                - Path=/transfer/**
           default-filters:
             - StripPrefix=1
