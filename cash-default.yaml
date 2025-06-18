@@ -4,5 +4,5 @@ spring:
   application:
     name: cash
 feign:
-  accounts: http://localhost:8081
+  accounts: http://localhost:8089/accounts
   blocker: http://localhost:8083
