@@ -3,7 +3,7 @@ server:
 spring:
   application:
     name: transfer
-feign:
-  accounts: http://localhost:8089/accounts
-  exchange: http://localhost:8089/exchange
-  blocker: http://localhost:8089/blocker
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

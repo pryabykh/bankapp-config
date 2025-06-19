@@ -3,9 +3,6 @@ server:
 spring:
   application:
     name: cash
-feign:
-  accounts: http://localhost:8089/accounts
-  blocker: http://localhost:8089/blocker
 eureka:
   client:
     serviceUrl:

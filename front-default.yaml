@@ -1,8 +1,6 @@
 server:
   port: 8080
-feign:
-  accounts: http://localhost:8089/accounts
-  exchange: http://localhost:8089/exchange
-  cash: http://localhost:8089/cash
-  transfer: http://localhost:8089/transfer
-  notifications: http://localhost:8089/notifications
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

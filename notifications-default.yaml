@@ -31,3 +31,7 @@ spring:
     change-log: classpath:db/changelog/db.changelog-master.xml
   application:
     name: notifications
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
