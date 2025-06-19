@@ -7,31 +7,31 @@ spring:
         webflux:
           routes:
             - id: accounts
-              uri: http://localhost:8081
+              uri: lb://accounts
               predicates:
                 - Path=/accounts/**
             - id: blocker
-              uri: http://localhost:8083
+              uri: lb://blocker
               predicates:
                 - Path=/blocker/**
             - id: cash
-              uri: http://localhost:8084
+              uri: lb://cash
               predicates:
                 - Path=/cash/**
             - id: exchange
-              uri: http://localhost:8082
+              uri: lb://exchange
               predicates:
                 - Path=/exchange/**
             - id: exchange-generator
-              uri: http://localhost:8086
+              uri: lb://exchange-generator
               predicates:
                 - Path=/exchange-generator/**
             - id: notifications
-              uri: http://localhost:8087
+              uri: lb://notifications
               predicates:
                 - Path=/notifications/**
             - id: transfer
-              uri: http://localhost:8085
+              uri: lb://transfer
               predicates:
                 - Path=/transfer/**
           default-filters:
